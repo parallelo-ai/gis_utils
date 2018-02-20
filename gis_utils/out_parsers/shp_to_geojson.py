@@ -10,7 +10,7 @@ def shp_to_geojson(infile,outfile):
     :param outfile: string with the path to the destination geojson
     """
     cmd = "ogr2ogr"
-    driver = "\"GeoJSON\""
+    driver = "GeoJSON"
 
     st,r = sp.getstatusoutput(cmd + " --version")
 

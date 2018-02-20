@@ -13,7 +13,7 @@ def geojson_to_topojson(infile,outfile):
     :param infile: string with the path to the input geojson
     :param outfile: string with the path to the destination topojson 
     """
-    cmd = os.path.join(PurePath(PARSER_PATH).parents[2],"node_modules/topojson-server/bin/geo2topo")
+    cmd = os.path.join(PurePath(PARSER_PATH).parents[2], "node_modules/topojson-server/bin/geo2topo")
 
     st,r = sp.getstatusoutput(cmd + " --version")
 

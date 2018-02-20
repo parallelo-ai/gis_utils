@@ -10,7 +10,7 @@ def geojson_to_shp(infile,outfile):
     :param outfile: string with the path to the destination shapefile
     """
     cmd = "ogr2ogr"
-    driver = "\"ESRI Shapefile\""
+    driver = "ESRI Shapefile"
 
     st,r = sp.getstatusoutput(cmd + " --version")
 
