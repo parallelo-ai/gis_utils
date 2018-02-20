@@ -1,6 +1,14 @@
 import subprocess as sp
 
 def shp_to_geojson(infile,outfile):
+    """
+    shp_to_geojson converts a shapefile file
+    specification (i.e. a .shp, .dbf, and .shx files) into a geojson.
+    This function uses GDAL's ogr2ogr cli-tool
+    
+    :param infile: string with the path to the input shapefile
+    :param outfile: string with the path to the destination geojson
+    """
     cmd = "ogr2ogr"
     driver = "\"GeoJSON\""
 
